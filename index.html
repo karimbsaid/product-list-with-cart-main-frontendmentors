@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="dessert">
+        <div class="desserts-heading">Desserts</div>
+
+        <div class="product-container">
+          <!-- <div class="product-card">
+            <img
+              class="product-img"
+              src="assets/images/image-cake-desktop.jpg"
+            />
+            <div class="product-btn hide  ">
+              <img src="./assets/images/icon-add-to-cart.svg" />
+              <div>Add to Cart</div>
+            </div>
+            <div class="product-quantity hide">
+              <span class="decrement">&minus;</span>
+                <span class="quantity">1</span>
+                <span class="increment">&plus;</span>
+
+            </div>
+            <span class="product-name product-subheading">offlie</span>
+            <span class="product-description product-subheading"
+              >offlie with hrissa</span
+            >
+            <span class="product-price product-subheading">5.46&dollar;</span>
+          </div> -->
+        </div>
+      </div>
+      <div class="cart-wrapper">
+        <div class="cart">
+          <div class="cart-heading">
+            Your Cart (<span id="totalCartItems">0</span>)
+          </div>
+          <div class="cart-body">
+            <div class="empty-card">
+              <img src="assets/images/illustration-empty-cart.svg"/>
+              <span>your added items will appear here</span>
+            </div>
+            <!-- <div class="cart-item ">
+              <div>
+                <div class="cart-item-name">Classic Tiramisu</div>
+                <div class="cart-item-details">
+                  <div class="cart-item-quantity">1x</div>
+                  <div class="cart-item-price">@$5.50</div>
+                  <div class="cart-item-total">$5.50</div>
+                </div>
+              </div>
+              <div class="cart-remove-item">
+                <img
+                  src="./assets/images/icon-remove-item.svg"
+                  alt="remove-item"
+                />
+              </div>
+            </div> -->
+            <!-- <div class="cart-total ">
+              <div class="cart-total-text">Order Total</div>
+              <div class="cart-total-price">
+                <span>$</span><span id="cartTotalAmount"></span>
+              </div>
+            </div> -->
+            <div class="cart-carbon hide">
+              <div class="cart-carbon-icon">
+                <img
+                  src="./assets/images/icon-carbon-neutral.svg"
+                  alt="carbon-neutral-icon"
+                />
+              </div>
+              <div class="cart-carbon-text">
+                This is a <span>carbon-neutral</span> delivery
+              </div>
+            </div>
+            <div class="cart-confirm-btn hide">
+              <div>Confirm Order</div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal hide">
+        <button class="close-modal">&times;</button>
+        <div class="modal-icon">
+          <img
+            src="./assets/images/icon-order-confirmed.svg"
+            alt="order-confirmed"
+          />
+        </div>
+        <div class="modal-header">Order Confirmed</div>
+        <div class="modal-subheader">We hope you enjoy your food!</div>
+        <div class="modal-cart-item-list">
+          <div class="modal-cart-item">
+            <div class="modal-cart-item-left">
+              <div class="modal-cart-item-thumbnail">
+                <img
+                  src="./assets/images/image-tiramisu-thumbnail.jpg"
+                  alt="tiramisu-thumbnail"
+                />
+              </div>
+              <div class="modal-cart-item-details">
+                <div class="modal-cart-item-name">Classic Tiramisu</div>
+                <div class="modal-cart-item-data">
+                  <div class="modal-cart-item-quantity">1x</div>
+                  <div class="modal-cart-item-price">@ $5.50</div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-cart-item-right">$5.50</div>
+
+          </div>
+
+        </div>
+        <div class="modal-cart-total ">
+          <div class="modal-cart-total-text">Order Total</div>
+          <div class="modal-cart-total-price">$46.50</div>
+        </div>
+        <div class="modal-cart-btn-wrapper ">
+          <div class="modal-cart-btn">Start New Order</div>
+        </div>
+
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
